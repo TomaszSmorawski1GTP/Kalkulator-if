@@ -1,0 +1,55 @@
+#include <iostream>
+
+
+int main(){
+    
+	int liczba1, liczba2, x;
+    
+	char dzialanie;
+    
+	std::cout<<"Podaj pierwsza liczbe: ";
+    
+	std::cin>>liczba1;
+    
+	std::cout<<"Podaj druga liczbe: ";
+    
+	std::cin>>liczba2;
+    
+	std::cout<<"Co chcialbys zrobic: 1.dodawanie, 2.odejmowanie, 3.mnozenie, 4.dzielenie, 5.reszta z dzielenia ";
+    
+	std::cin>>dzialanie;
+    
+	if(dzialanie== '1')
+    {
+        x = liczba1+liczba2;
+       std::cout<<x;
+
+    }
+    
+	if(dzialanie== '2'){
+        x = liczba1-liczba2;
+       std::cout<<x;
+
+    }
+    
+	if (dzialanie== '3'){
+        x = liczba1*liczba2;
+        std::cout<<x;
+
+    }
+    
+	if (dzialanie== '4'){
+        x = liczba1/liczba2;
+        std::cout<<x;
+
+    }
+    
+	if (dzialanie== '5'){
+        x = liczba1%liczba2;
+        std::cout<<x;
+
+    }
+    
+
+    return 0;
+}
